@@ -2,7 +2,7 @@ from torchvision import transforms
 from torch.utils.data import DataLoader, Dataset
 from PIL import Image
 import os
-
+Image.MAX_IMAGE_PIXELS = None
 IMG_SIZE = 224  # Larger, human-viewable size
 
 class CustomImageDataset(Dataset):
